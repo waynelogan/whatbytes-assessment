@@ -7,7 +7,7 @@ export default function Menu() {
       col-span-2
       md:h-full
       bg-white md:text-slate-700
-      max-md:fixed z-10 w-full bottom-0
+      max-md:fixed max-md:z-10 w-full bottom-0
     ">
       <ul className="flex max-md:justify-around md:flex-col mr-2">
         <li className="p-4 flex gap-2 items-center pl-8">

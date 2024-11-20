@@ -5,7 +5,7 @@ export default function Navbar() {
   return (
     <nav className="
     border-b bg-white
-    px-10
+    px-10 z-10
     flex justify-between items-center
     fixed w-full
     ">

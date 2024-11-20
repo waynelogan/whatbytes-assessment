@@ -2,6 +2,7 @@ import Image from "next/image"
 import { PercentileChart } from "./components/PercentileChart"
 import { Progress } from "@/components/ui/progress"
 import { UpdateDialog } from "./components/UpdateDialog"
+import { QuestionAnalysisChart } from "./components/QuestionAnalysisChart"
 
 export default function Home() {
   return (
@@ -120,12 +121,15 @@ export default function Home() {
             border  rounded-md
             px-4 py-6
           ">
-            <h2 className="font-semibold text-lg leading-loose">Question Analysis</h2>
+            <div className="flex justify-between items-center">
+              <h2 className="font-semibold text-lg leading-loose">Question Analysis</h2>
+              <p className="text-blue-600 font-bold">10/15</p>
+            </div>
             <p>
-              <span className="font-semibold">You scored 30% percentile </span>
-              which is lower than the average percentile
-              72% of all the engineers who took this assessment.
+              <span className="font-semibold">You scored 12 questions correct out 15. </span>
+              However it still needs some improvements.
             </p>
+            <QuestionAnalysisChart />
           </div>
         </div>
       </div>
