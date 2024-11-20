@@ -1,7 +1,7 @@
-import { Button } from "@/components/ui/button"
 import Image from "next/image"
 import { PercentileChart } from "./components/PercentileChart"
 import { Progress } from "@/components/ui/progress"
+import { UpdateDialog } from "./components/UpdateDialog"
 
 export default function Home() {
   return (
@@ -23,9 +23,7 @@ export default function Home() {
                 <p className="text-slate-700">Questions: 08 | Duration: 15 mins | Submitted on 5 June 2021</p>
               </div>
             </div>
-              <Button className="bg-blue-900">
-                Update
-              </Button>
+            <UpdateDialog />
           </div>
           <div className="
             border rounded-md
