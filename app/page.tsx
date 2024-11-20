@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
 import { PercentileChart } from "./components/PercentileChart"
+import { Progress } from "@/components/ui/progress"
 
 export default function Home() {
   return (
@@ -64,6 +65,44 @@ export default function Home() {
           </div>
         </div>
         <PercentileChart />
+        <div className="
+          border py-2 px-4 rounded-md
+        ">
+          <h2 className="font-bold text-lg leading-loose">Syllabus Wise Analysis</h2>
+          <div className="
+            text-slate-700 
+              flex flex-col gap-4
+            ">
+            <div>
+              <h4>HTML Tools, Forms, History</h4>
+              <div className="flex items-center justify-between gap-2">
+                <Progress value={80} className="[&>*]:bg-blue-600" />
+                <p className="text-blue-600 font-bold">80%</p>
+              </div>
+            </div>
+            <div>
+              <h4>Tags & References in HTML</h4>
+              <div className="flex items-center justify-between gap-2">
+                <Progress value={60} className="[&>*]:bg-orange-600" />
+                <p className="text-orange-600 font-bold">60%</p>
+              </div>
+            </div>
+            <div>
+              <h4>Tables & References in HTML</h4>
+              <div className="flex items-center justify-between gap-2">
+                <Progress value={24} className="[&>*]:bg-rose-600" />
+                <p className="text-rose-600 font-bold">24%</p>
+              </div>
+            </div>
+            <div>
+              <h4>Tables & CSS Basics</h4>
+              <div className="flex items-center justify-between gap-2">
+                <Progress value={96} className="[&>*]:bg-green-600" />
+                <p className="text-green-600 font-bold">96%</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   )
