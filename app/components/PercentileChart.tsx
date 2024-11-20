@@ -31,7 +31,7 @@ const chartData = [
 const chartConfig = {
   numOfStudents: {
     label: "Number of Students: ",
-    color: "#312e81",
+    color: "#94a3b8",
   }
 } satisfies ChartConfig
 
@@ -42,7 +42,7 @@ export function PercentileChart() {
         <CardTitle>Comparison Graph</CardTitle>
         <CardDescription>
           <div className="flex justify-between">
-            <p>
+            <p className="text-slate-700">
               <span className="font-semibold">You scored 30% percentile </span>
               which is lower than the average percentile
               72% of all the engineers who took this assessment.
@@ -86,7 +86,7 @@ export function PercentileChart() {
             />
             <ReferenceLine
               x={30}
-              stroke="#312e81"
+              stroke="#94a3b8"
               label={{ value: 'Your Percentile', position: 'center'}}
             />
           </LineChart>

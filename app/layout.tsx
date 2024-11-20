@@ -24,7 +24,6 @@ export default function RootLayout({
         <Navbar />
         <div className="
           grid grid-cols-10 divide-x pt-20
-          min-h-screen
 ">
           <Menu />
           {children}
