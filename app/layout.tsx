@@ -23,8 +23,8 @@ export default function RootLayout({
       >
         <Navbar />
         <div className="
-          grid grid-cols-10 divide-x pt-20
-">
+          md:grid grid-cols-10 md:divide-x pt-20 max-md:mb-20
+        ">
           <Menu />
           {children}
         </div>

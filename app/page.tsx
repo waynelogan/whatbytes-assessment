@@ -14,23 +14,30 @@ export default function Home() {
         <div className="col-span-3 flex flex-col gap-4">
           <div className="
             border rounded-md 
-            flex gap-2 w-full px-4 py-6
+            flex max-md:flex-col gap-2 w-full px-4 py-6
           ">
-            <Image src={'/html.png'} alt="html logo" width={100} height={40} />
-            <div>
-              <h2 className="font-semibold text-lg leading-loose">Hyper Text Markup Language</h2>
-              <p className="text-slate-700">Questions: 08 | Duration: 15 mins | Submitted on 5 June 2021</p>
+            <div className="flex gap-2">
+              <Image src={'/html.png'} alt="html logo" width={100} height={100} className="aspect-auto" />
+              <div>
+                <h2 className="font-semibold text-lg leading-loose">Hyper Text Markup Language</h2>
+                <p className="text-slate-700">Questions: 08 | Duration: 15 mins | Submitted on 5 June 2021</p>
+              </div>
             </div>
-            <Button>
-              Update
-            </Button>
+              <Button className="bg-blue-900">
+                Update
+              </Button>
           </div>
           <div className="
             border rounded-md
             px-4 py-6
           ">
             <h2 className="font-semibold text-lg leading-loose">Quick Statistics</h2>
-            <div className="flex justify-between divide-x">
+            <div className="
+              flex max-md:flex-col 
+              gap-4 
+              md:justify-between  
+              max-md:divide-y md:divide-x
+              ">
               <div className="flex gap-2">
                 <div className="
                 w-12 h-12 flex items-center justify-center text-xl
@@ -43,7 +50,7 @@ export default function Home() {
                   <small className="text-slate-700">YOUR RANK</small>
                 </div>
               </div>
-              <div className="flex gap-2 pl-2">
+              <div className="flex gap-2 max-md:pt-2 md:pl-2">
                 <div className="
                 w-12 h-12 flex items-center justify-center text-xl
                 bg-slate-200 p-1 rounded-full
@@ -55,7 +62,7 @@ export default function Home() {
                   <small className="text-slate-700">PERCENTILE</small>
                 </div>
               </div>
-              <div className="flex gap-2 pl-2">
+              <div className="flex gap-2 max-md:pt-2  md:pl-2">
                 <div className="
                 w-12 h-12 flex items-center justify-center text-xl
                 bg-slate-200 p-1 rounded-full
@@ -69,13 +76,9 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="
-            h-32
-          ">
-            <PercentileChart />
-          </div>
+          <PercentileChart />
         </div>
-        <div className="col-span-2 flex flex-col gap-4">
+        <div className="md:col-span-2 flex flex-col gap-4">
           <div className="
             border rounded-md w-full
             px-4 py-6

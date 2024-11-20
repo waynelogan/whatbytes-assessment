@@ -5,21 +5,22 @@ export default function Menu() {
   return (
     <nav className="
       col-span-2
-      h-full
-      text-slate-700
+      md:h-full
+      bg-white md:text-slate-700
+      max-md:fixed z-10 w-full bottom-0
     ">
-      <ul className="flex flex-col mr-2">
+      <ul className="flex max-md:justify-around md:flex-col mr-2">
         <li className="p-4 flex gap-2 items-center">
           <RiBarChartFill size={22} />
-          <p>Dashboard</p>
+          <p className="max-md:hidden">Dashboard</p>
         </li>
-        <li className="p-4 flex gap-2 items-center bg-indigo-100 rounded-r-full text-indigo-900">
+        <li className="p-4 flex gap-2 items-center bg-indigo-100 max-md:rounded-t-full md:rounded-r-full text-indigo-900">
           <RiAwardFill size={22} />
-          <p>Skill Test</p>
+          <p className="max-md:hidden">Skill Test</p>
         </li>
         <li className="p-4 flex gap-2 items-center">
           <LuStickyNote size={22} />
-          <p>Internship</p>
+          <p className="max-md:hidden">Internship</p>
         </li>
       </ul>
     </nav>
