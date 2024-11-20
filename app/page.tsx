@@ -63,14 +63,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="
-          border p-2 rounded-md
-        ">
-          <div>
-            
-            <PercentileChart />
-          </div>
-        </div>
+        <PercentileChart />
       </div>
     </div>
   )
