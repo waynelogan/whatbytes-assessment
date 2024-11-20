@@ -4,9 +4,10 @@ import { FaMap } from "react-icons/fa"
 export default function Navbar() {
   return (
     <nav className="
-    border-b
+    border-b bg-white
     px-10
     flex justify-between items-center
+    fixed w-full
     ">
       <div className="
         flex gap-2 items-center
